@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background: black;
+  color: #00f5ff;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#hud {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+#title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+input {
+  width: 240px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #00f5ff;
+  color: #00f5ff;
+  outline: none;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  background: transparent;
+  border: 1px solid #00f5ff;
+  color: #00f5ff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00f5ff;
+  color: black;
+}
+
+#output {
+  margin-top: 15px;
+  white-space: pre-wrap;
+}
