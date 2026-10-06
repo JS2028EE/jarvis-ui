@@ -7,7 +7,11 @@ const output = document.getElementById("output");
 const input = document.getElementById("input");
 
 // INIT WORLD
-initWorld(canvas);
+try { initWorld(canvas); }
+catch (error) { console.warn("3D background unavailable", error); }
+input.addEventListener("keydown", event => {
+  if (event.key === "Enter") window.runCommand();
+});
 
 // COMMAND EXECUTION
 window.runCommand = function () {
